@@ -11,6 +11,8 @@ local del = vim.keymap.del
 map("i", "jk", "<ESC>")
 map("i", "jj", "<ESC>")
 map("i", "<A-CR>", "<End><CR>", { desc = "C-CR moves the cursor to new line" })
+map("n", "<Tab>", ":bnext<CR>", { silent = true, noremap = true })
+map("n", "<S-Tab>", ":bprev<CR>", { silent = true, noremap = true })
 
 harpoon:setup()
 

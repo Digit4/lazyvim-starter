@@ -5,7 +5,7 @@ return {
   config = function()
     require("mini.surround").setup({
       mappings = {
-        add = "gsa", -- Add surrounding (like 'ysiw)')
+        add = "gsa", -- Add surrounding (like 'gsiw(')
         delete = "gsd", -- Delete surrounding
         replace = "gsr", -- Replace surrounding
         find = "gsf", -- Optional: find to the right
