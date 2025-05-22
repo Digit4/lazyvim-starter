@@ -6,3 +6,12 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd("TextYankPost", {
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
