@@ -7,6 +7,7 @@ return {
   ---@diagnostic disable-next-line: undefined-doc-name
   ---@type AutoSession.Config
   opts = {
+    enabled = false,
     suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
     -- log_level = 'debug',
   },
