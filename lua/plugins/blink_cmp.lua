@@ -25,13 +25,10 @@ return {
 
       ghost_text = { enabled = true },
 
-      documentation = { auto_show = true, auto_show_delay = 200 },
-
-      sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
-      },
-
-      signature = { enabled = true },
+      documentation = { auto_show = true, auto_show_delay_ms = 200 },
+    },
+    sources = {
+      default = { "lsp", "path", "snippets", "buffer" },
     },
 
     keymap = {
