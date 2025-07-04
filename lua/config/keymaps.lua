@@ -11,8 +11,8 @@ local del = vim.keymap.del
 map("i", "jk", "<ESC>")
 map("i", "jj", "<ESC>")
 map("i", "<A-CR>", "<End><CR>", { desc = "C-CR moves the cursor to new line" })
-map("n", "<Tab>", ":bnext<CR>", { silent = true, noremap = true })
-map("n", "<S-Tab>", ":bprev<CR>", { silent = true, noremap = true })
+map("n", "<Tab>", ":tabnext<CR>", { silent = true, noremap = true })
+map("n", "<S-Tab>", ":tabprev<CR>", { silent = true, noremap = true })
 
 harpoon:setup()
 
@@ -27,3 +27,6 @@ end)
 map("n", "<C-S-N>", function()
   harpoon:list():next()
 end)
+
+map("x", "<leader>P", '"_dP', { desc = "Paste without yanking replaced text" })
+map("x", "<leader>p", '"_dP', { desc = "Paste without yanking replaced text" })
