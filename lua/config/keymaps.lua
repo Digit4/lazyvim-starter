@@ -30,3 +30,5 @@ end)
 
 map("x", "<leader>P", '"_dP', { desc = "Paste without yanking replaced text" })
 map("x", "<leader>p", '"_dP', { desc = "Paste without yanking replaced text" })
+
+map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
