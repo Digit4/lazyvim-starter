@@ -9,7 +9,7 @@ return {
     --
     -- Exceptions: vim.bo.filetype == 'dap-repl'
     enabled = function()
-      return not vim.tbl_contains({ "lua", "markdown" }, vim.bo.filetype)
+      return not vim.tbl_contains({ "markdown" }, vim.bo.filetype)
     end,
 
     -- Disable cmdline
@@ -30,6 +30,8 @@ return {
     sources = {
       default = { "lsp", "path", "snippets", "buffer" },
     },
+
+    signature = { enabled = true },
 
     keymap = {
       preset = "super-tab",
