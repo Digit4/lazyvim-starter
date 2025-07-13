@@ -10,8 +10,9 @@ local del = vim.keymap.del
 
 map("i", "jk", "<ESC>")
 map("i", "jj", "<ESC>")
-map("i", "J", "<C-o>o", { desc = "C-CR moves the cursor to new line" })
-map("i", "K", "<C-o>O", { desc = "C-CR moves the cursor to new line" })
+map("i", "<C-J>", "<C-o>o", { desc = "C-CR moves the cursor to new line" })
+map("i", "<C-K>", "<C-o>O", { desc = "C-CR moves the cursor to new line" })
+map("i", "<C-e>", "<C-o>$", { desc = "Move to the end of line" })
 -- map("n", "<Tab>", ":tabnext<CR>", { silent = true, noremap = true })
 -- map("n", "<S-Tab>", ":tabprev<CR>", { silent = true, noremap = true })
 map("n", "<leader>tn", ":tabnext<CR>", { silent = true, noremap = true })
@@ -37,3 +38,6 @@ map("x", "<leader>p", '"_dP', { desc = "Paste without yanking replaced text" })
 map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
 
 map("n", "<leader>td", ":Todo<CR>", { desc = "Open Todo" })
+map("n", "<leader>sr", function()
+  require("telescope").extensions.git_worktree.git_worktrees()
+end, { desc = "search through [G]it worktrees" })

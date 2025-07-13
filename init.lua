@@ -1,6 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
+require("telescope").load_extension("git_worktree")
 -- NOTE: CUSTOM MACROS
 local esc = vim.api.nvim_replace_termcodes("<ESC>", true, true, true)
 
