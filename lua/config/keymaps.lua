@@ -10,8 +10,8 @@ local del = vim.keymap.del
 
 map("i", "jk", "<ESC>")
 map("i", "jj", "<ESC>")
-map("i", "<C-J>", "<C-o>o", { desc = "C-CR moves the cursor to new line" })
-map("i", "<C-K>", "<C-o>O", { desc = "C-CR moves the cursor to new line" })
+map("i", "<C-n>", "<C-o>o", { desc = "C-CR moves the cursor to new line" })
+map("i", "<C-p>", "<C-o>O", { desc = "C-CR moves the cursor to new line" })
 map("i", "<C-e>", "<C-o>$", { desc = "Move to the end of line" })
 -- map("n", "<Tab>", ":tabnext<CR>", { silent = true, noremap = true })
 -- map("n", "<S-Tab>", ":tabprev<CR>", { silent = true, noremap = true })
