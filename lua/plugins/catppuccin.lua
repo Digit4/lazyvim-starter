@@ -5,7 +5,7 @@ return {
   opts = {
     transparent_background = true,
     dim_inactive = {
-      enabled = true,
+      enabled = false,
     },
     integrations = {
       noice = true,
