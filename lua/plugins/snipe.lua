@@ -9,5 +9,11 @@ return {
       desc = "Open Sniper buffer menu",
     },
   },
-  opts = {},
+  opts = {
+    ui = {
+      position = "center",
+      border = "rounded",
+      text_align = "file-first",
+    },
+  },
 }
