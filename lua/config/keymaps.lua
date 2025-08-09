@@ -41,3 +41,7 @@ map("n", "<leader>td", ":Todo<CR>", { desc = "Open Todo" })
 map("n", "<leader>sr", function()
   require("telescope").extensions.git_worktree.git_worktrees()
 end, { desc = "search through [G]it worktrees" })
+
+-- delete marks
+map({ "n" }, "<leader>dm", ":delm a-z0-9<CR>", { desc = "Delete all local file marks" })
+map({ "n" }, "<leader>dM", ":delm A-Z0-9<CR>", { desc = "Delete all local file marks" })

@@ -1,3 +1,4 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.macros")
 require("config.lazy")
 require("telescope").load_extension("git_worktree")
