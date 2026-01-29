@@ -43,5 +43,5 @@ map("n", "<leader>sr", function()
 end, { desc = "search through [G]it worktrees" })
 
 -- delete marks
-map({ "n" }, "<leader>dm", ":delm a-z0-9<CR>", { desc = "Delete all local file marks" })
-map({ "n" }, "<leader>dM", ":delm A-Z0-9<CR>", { desc = "Delete all local file marks" })
+map({ "n" }, "<leader>md", ":delm a-z0-9<CR>", { desc = "Delete all local file marks" })
+map({ "n" }, "<leader>Md", ":delm A-Z0-9<CR>", { desc = "Delete all local file marks" })
