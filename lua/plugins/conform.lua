@@ -12,6 +12,7 @@ return {
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
       lua = { "stylua" },
+      cpp = { "clang-format" },
     },
   },
 }
