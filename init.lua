@@ -2,3 +2,4 @@
 require("config.macros")
 require("config.lazy")
 require("telescope").load_extension("git_worktree")
+require("config.godot-engine")

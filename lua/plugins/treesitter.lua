@@ -1,6 +1,9 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter-textobjects",
+    },
     opts = {
       incremental_selection = {
         enable = true,
@@ -8,15 +11,9 @@ return {
           init_selection = "+",
           node_incremental = "+",
           scope_incremental = "<Tab>",
+          scope_decremental = "-",
         },
       },
-    },
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    lazy = true,
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    opts = {
       textobjects = {
         select = {
           enable = true,
