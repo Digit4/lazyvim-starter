@@ -13,6 +13,7 @@ return {
       typescriptreact = { "prettierd" },
       lua = { "stylua" },
       cpp = { "clang-format" },
+      gdscript = { "gdformat" },
     },
   },
 }
